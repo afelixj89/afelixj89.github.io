@@ -6,21 +6,29 @@
     <title>Pokemon World</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js" defer></script>
-
-
-
-    
-
 </head>
 <body>
-  
-
-
-    <form>
-      <input type= "text" id="pokName" placeholder="Enter Your Favorite Pokemon" >
-      <button type="submit" class="submitButton">I Choose You!!</button>
-      </form> 
-
+    <div class="pokedex">
+        <div class="screen">
+            <img src = "Pokemon-Logo.png" alt="pokemonImage" class ="pokemonPicture">
+            <div class="screenText">
+                <p class="pokemonName"></p>
+                <p class="id"></p>
+                <p class="height"></p>
+                <p class="weight"></p>
+                <p class="abilities"></p>
+            </div>
+        </div>
+        <form>
+            <div class = "form-group1">
+                <input type= "text" id="pokName" size="24" placeholder="Enter Your Favorite Pokemon" >
+            </div>
+            <div class="form-group2">
+                <button title = "searchButton" type="submit" class="submitButton">
+                </button>
+            </div>
+        </form> 
+    </div>
     </body>
 
 

@@ -1,0 +1,73 @@
+.pokedex{
+    background-color: rgb(221, 67, 67);
+    width: 450px;
+    height: 550px;
+    padding-top: 40PX;
+    border-color: black;
+    border-style: solid;
+}
+
+.screen{
+    background-color: rgb(168, 160, 109) ;
+    width: 80%;
+    height: 350px;
+    border-style: solid;
+    border-color: black;
+    margin-left: 10%;
+   
+}
+
+
+
+.screenText{
+
+    text-align: center;
+    
+   
+}
+
+.pokemonPicture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 10px;
+}
+
+form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+    
+.form-group1{text-align: center;
+    padding-top: 20px;}
+    
+
+.submitButton{
+    background-image: url(pokeball_button.png);
+    background-size: cover;
+    min-height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+input::placeholder{
+    color: rgb(80, 56, 56);
+    font-weight: bold;
+    
+}
+
+.form-group2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+    padding-top: 20px;
+}
+/* 
+#pokName{display: flex;
+    justify-content: space-around;} */
+
