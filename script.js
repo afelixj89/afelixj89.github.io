@@ -1,30 +1,30 @@
 
-const url = "https://pokeapi.co/api/v2/pokemon/"
-// const searchButton = document.querySelector(".submitButton");
-// const seachBarResults = document.querySelector("#pokName");
+const searchButton = document.querySelector(".submitButton");
+const seachBarResults = document.querySelector("#pokName");
 
 
 
 
-
-searchButton.addEventListener("click", function() {
+searchButton.addEventListener("click", function(e) {
+    e.preventDefault();
+    //console.log(searchBarLower)
     const searchBarValue = seachBarResults.value;
-    const searchBarCapital= searchBarCapital.toLowerCase()
+    const searchBarLower= searchBarValue.toLowerCase()
+    const url = `https://pokeapi.co/api/v2/pokemon/${searchBarLower}`;
+    console.log(searchBarLower)
 
     
-    fetch(url)
-        .then((res) => {
-             return res.json();
-  })
-                .then((res) => {
-                     pokemon = res.results
-                         for(let i = 0; i < pokemon.length; i++){
-                            if(pokemon[i].name === searchBarCapital )
-                                console.log(pokemon[i]);
-    }
-  });
+        fetch(url)
+            .then((res) =>{ 
+              // console.log(res)
+                return res.json();
+    })
+                    .then((data) => {
+                        pokemon = data.results //results is the array that pulls the pokemon out from the res iterable
+                        console.log(data)
+                      });
 
-});
- 
+    });
+    
 
-        
+            
