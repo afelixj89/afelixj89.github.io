@@ -7,7 +7,7 @@ const weight = document.querySelector(".weight")
 const id = document.querySelector(".id")
 const abilities = document.querySelector(".abilities")
 const pokemonName = document.querySelector(".pokemonName")
-console.log(".pokemonName")
+const debutGame = document.querySelector(".debutGame")
 
 
 
@@ -15,11 +15,9 @@ console.log(".pokemonName")
 
 searchButton.addEventListener("click", function(e) {
     e.preventDefault();
-    //console.log(searchBarLower)
     const searchBarValue = seachBarResults.value;
     const searchBarLower= searchBarValue.toLowerCase()
     const url = `https://pokeapi.co/api/v2/pokemon/${searchBarLower}`;
-    // console.log(searchBarLower)
 
     
         fetch(url)
@@ -29,7 +27,7 @@ searchButton.addEventListener("click", function(e) {
     })
                     .then((data) => {
                         pokemon = data.results //results is the array that pulls the pokemon out from the res iterable
-                        // console.log(data.sprites.front_default);
+                      
 
                         const imageLink = data.sprites.front_default
                         showImage.setAttribute("src", imageLink)
@@ -38,10 +36,10 @@ searchButton.addEventListener("click", function(e) {
                         height.innerHTML = `Height: ${data.height} `
                         weight.innerHTML = `Weight: ${data.weight}`
                         id.innerHTML = `Pokemon ID: ${data.id}`
-                        
-                        
-                        // id.innerHTML = `Abilities: ${data.a}`
+                        debutGame.innerHTML = `Debut Game: Pokemon ${data.game_indices[0].version.name}`
 
+                        console.log(`${data.game_indices[0].version.name}`)
+                        
 
                         
 
