@@ -8,7 +8,7 @@ const id = document.querySelector(".id")
 const abilities = document.querySelector(".abilities")
 const pokemonName = document.querySelector(".pokemonName")
 const debutGame = document.querySelector(".debutGame")
-
+const pokedex = document.querySelector(".pokedex")
 
 
 
@@ -39,6 +39,8 @@ searchButton.addEventListener("click", function(e) {
                         debutGame.innerHTML = `Debut Game: Pokemon ${data.game_indices[0].version.name}`
 
                         console.log(`${data.game_indices[0].version.name}`)
+                        pokedex.style.backgroundColor = data.game_indices[0].version.name
+                        
                         
 
                         
