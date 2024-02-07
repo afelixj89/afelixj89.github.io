@@ -1,4 +1,3 @@
-
 body{
     display: flex;
     justify-content: center;
@@ -81,7 +80,18 @@ input::placeholder{
     width: 50%; 
     padding-top: 20px;
 }
-/* 
-#pokName{display: flex;
-    justify-content: space-around;} */
 
+@media (max-width: 450px) {
+    input[type="text"] {
+        width: 80%; /* Adjust width when width of the document is under 450px */
+    }
+    
+    }
+
+    @media (max-width: 190px) {
+        .submitButton{
+            display: none;
+        }
+        
+        }
+    
