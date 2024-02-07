@@ -3,6 +3,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url(pokemon-pikachu-black-white-pikachu-drawing-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
 }
 
 
@@ -18,6 +20,7 @@ body{
     padding-top: 40PX;
     border-color: black;
     border-style: solid;
+    box-shadow: 10px 5px 5px;
 }
 
 .screen{
