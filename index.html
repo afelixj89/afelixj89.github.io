@@ -8,27 +8,37 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="pokedex">
-        <div class="screen">
-            <img src = "Pokemon-Logo.png" alt="pokemonImage" class ="pokemonPicture">
-            <div class="screenText">
-                <p class="pokemonName"></p>
-                <p class="id"></p>
-                <p class="height"></p>
-                <p class="weight"></p>
-                <p class="debutGame"></p>
-            </div>
+    <div class="nav">
+        <h1 class="nav-title">Pokedex</h1>
+        <div class="nav-links">
+            <a class = "links" href="#" class="active">My Pokemon</a>
+            <a href="sign_up.html"> <button type = "submit"  class="btn">Sign Out</button></a>
         </div>
-        <form>
-            <div class = "form-group1">
-                <input type= "text" id="pokName" size="24" placeholder="Enter Your Favorite Pokemon" >
-            </div>
-            <div class="form-group2">
-                <button title = "searchButton" type="submit" class="submitButton">
-                </button>
-            </div>
-        </form> 
     </div>
+
+    <main>
+        <div class="pokedex">
+            <div class="screen">
+                <img src = "Pokemon-Logo.png" alt="pokemonImage" class ="pokemonPicture">
+                <div class="screenText">
+                    <p class="pokemonName"></p>
+                    <p class="id"></p>
+                    <p class="height"></p>
+                    <p class="weight"></p>
+                    <p class="debutGame"></p>
+                </div>
+            </div>
+            <form>
+                <div class = "form-group1">
+                    <input type= "text" id="pokName" size="24" placeholder="Enter Your Favorite Pokemon" >
+                </div>
+                <div class="form-group2">
+                    <button title = "searchButton" type="submit" class="submitButton">
+                    </button>
+                </div>
+            </form> 
+        </div>
+    </main>     
     </body>
 
 
