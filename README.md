@@ -3,7 +3,7 @@
 
 The Pokedex website at the moment helps you find basic information about any one Pokemon in the Pokemon universe. 
 
-WIREFRAME HERE
+## WIREFRAME 
 
 ![wireframe_pokemon](https://github.com/afelixj89/afelixj89.github.io/assets/90149052/55843c1f-8163-40f0-a740-289128298347)
 
